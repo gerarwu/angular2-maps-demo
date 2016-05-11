@@ -1,0 +1,21 @@
+<div id="map" ></div>
+
+<div id="reloj" [ngClass]="{active : isOn, disabled: isDisabled}" >
+
+  <div class="head">
+    <div class="zone">{{zoneName}}</div>
+
+    <div class="date" >
+      <span>{{stamp | date: 'MM/dd/yyyy'}}</span>
+    </div>
+
+    <div class="time">
+      <span>{{stamp | date: 'HH:mm:ss'}}</span>
+    </div>
+
+  </div>
+
+  <div class="search">
+    <input type="text"  (focus)="toggle(!isOn)"  (blur)="toggle(!isOn)" placeholder="data here">
+  </div>
+</div>

@@ -1,0 +1,68 @@
+
+#map{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#reloj{
+  position: absolute;
+  width: 300px;
+  z-index: 10;
+  background: #FFF;
+  padding: 1em;
+  right:0;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width .5s;
+}
+
+.zone{
+  text-align: center;
+  font : 15px "Monospace";
+  margin: 5px 0;
+}
+
+.head{
+  background-image: url("./app/views/city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.time{
+  font : 4em "Arial";
+  text-align: center;
+}
+
+.date{
+  font : 2em "Arial";
+  text-align: center;
+}
+
+.search{
+
+}
+
+.search input{
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #AABFB2;
+  margin: 10px 0;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.search input:focus{
+  box-shadow: 0px 0px 2px #AABFB2;
+}
+
+.active{
+  width : 30% !important;
+  height: 90%;
+  box-shadow: 0 0 10px #000;
+}
