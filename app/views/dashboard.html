@@ -1,7 +1,7 @@
-<div id="map" ></div>
 
-<div id="reloj" [ngClass]="{active : isOn, disabled: isDisabled}" >
+<sebm-google-map  [latitude]="lat" [longitude]="lng" [mapkey]="key"> hola</sebm-google-map>
 
+<div id="reloj" [ngClass]="{active : isOn, disabled: isDisabled}" >  
   <div class="head">
     <div class="zone">{{zoneName}}</div>
 
@@ -16,6 +16,6 @@
   </div>
 
   <div class="search">
-    <input type="text"  (focus)="toggle(!isOn)"  (blur)="toggle(!isOn)" placeholder="data here">
+    <input type="text"  (focus)="toggle(!isOn)"  (blur)="toggle(!isOn)" placeholder="Data here">
   </div>
 </div>

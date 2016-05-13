@@ -1,5 +1,4 @@
-
-#map{
+.sebm-google-map{
     position:absolute;
     width: 100%;
     height:100%;
@@ -12,7 +11,7 @@
   position: absolute;
   width: 300px;
   z-index: 10;
-  background: #FFF;
+  background: #F1FFFE;
   padding: 1em;
   right:0;
   -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
@@ -44,21 +43,18 @@
   text-align: center;
 }
 
-.search{
-
-}
-
 .search input{
   width: 100%;
   height: 2.5em;
-  border: 1px solid #AABFB2;
+  border: 2px solid #CCC;
   margin: 10px 0;
   border-radius: 2px;
   padding: 5px;
+  background-color: #ECECEC;
 }
 
 .search input:focus{
-  box-shadow: 0px 0px 2px #AABFB2;
+  background-color: #FFF;
 }
 
 .active{
